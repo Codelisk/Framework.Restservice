@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Framework.Restservice.Foundation\Framework.Restservice.Foundation.csproj" />
+    <ProjectReference Include="..\..\submodules\CodeGen\src\Common\Codelisk.GeneratorAttributes\Codelisk.GeneratorAttributes.csproj" />
   </ItemGroup>
 
 </Project>

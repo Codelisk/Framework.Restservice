@@ -71,21 +71,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "submodule", "submodule", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "codegen", "codegen", "{311B90BC-AAF4-419C-A2BD-D59B99FEA74B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Restservice.Foundation", "src\Framework.Restservice.Foundation\Framework.Restservice.Foundation.csproj", "{8B1769FD-5261-4704-AFEE-05C011C65348}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Restservice.Foundation", "src\Framework.Restservice.Foundation\Framework.Restservice.Foundation.csproj", "{8B1769FD-5261-4704-AFEE-05C011C65348}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{B41FD7FE-5A7A-4B02-AC23-0DA21EC61248}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Host", "sample\Sample.Host\Sample.Host.csproj", "{709F8E6B-4DAB-4C06-8B75-C3ED2CAF89AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Host", "sample\Sample.Host\Sample.Host.csproj", "{709F8E6B-4DAB-4C06-8B75-C3ED2CAF89AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Controller", "sample\Sample.Controller\Sample.Controller.csproj", "{8DDED478-2074-4892-A26D-89480F2764BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Controller", "sample\Sample.Controller\Sample.Controller.csproj", "{8DDED478-2074-4892-A26D-89480F2764BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Database", "sample\Sample.Database\Sample.Database.csproj", "{EF41D2B7-4B17-41B5-A78E-AFFED21A1956}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Database", "sample\Sample.Database\Sample.Database.csproj", "{EF41D2B7-4B17-41B5-A78E-AFFED21A1956}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Foundation", "sample\Sample.Foundation\Sample.Foundation.csproj", "{C3E170F7-CDB4-467E-96CC-32C08AAC38AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Foundation", "sample\Sample.Foundation\Sample.Foundation.csproj", "{C3E170F7-CDB4-467E-96CC-32C08AAC38AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Managers", "sample\Sample.Managers\Sample.Managers.csproj", "{687A1339-A67B-4B06-8DD9-A1364D59091E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Managers", "sample\Sample.Managers\Sample.Managers.csproj", "{687A1339-A67B-4B06-8DD9-A1364D59091E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Respositories", "sample\Sample.Respositories\Sample.Respositories.csproj", "{97875E81-5E1A-4E99-8ABB-330A257CC16D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Repositories", "sample\Sample.Repositories\Sample.Repositories.csproj", "{541AA79D-5B1C-4649-9F45-B4E95EFC4F88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -241,10 +241,10 @@ Global
 		{687A1339-A67B-4B06-8DD9-A1364D59091E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{687A1339-A67B-4B06-8DD9-A1364D59091E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{687A1339-A67B-4B06-8DD9-A1364D59091E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{97875E81-5E1A-4E99-8ABB-330A257CC16D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97875E81-5E1A-4E99-8ABB-330A257CC16D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97875E81-5E1A-4E99-8ABB-330A257CC16D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97875E81-5E1A-4E99-8ABB-330A257CC16D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{541AA79D-5B1C-4649-9F45-B4E95EFC4F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{541AA79D-5B1C-4649-9F45-B4E95EFC4F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{541AA79D-5B1C-4649-9F45-B4E95EFC4F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{541AA79D-5B1C-4649-9F45-B4E95EFC4F88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -288,7 +288,7 @@ Global
 		{EF41D2B7-4B17-41B5-A78E-AFFED21A1956} = {B41FD7FE-5A7A-4B02-AC23-0DA21EC61248}
 		{C3E170F7-CDB4-467E-96CC-32C08AAC38AC} = {B41FD7FE-5A7A-4B02-AC23-0DA21EC61248}
 		{687A1339-A67B-4B06-8DD9-A1364D59091E} = {B41FD7FE-5A7A-4B02-AC23-0DA21EC61248}
-		{97875E81-5E1A-4E99-8ABB-330A257CC16D} = {B41FD7FE-5A7A-4B02-AC23-0DA21EC61248}
+		{541AA79D-5B1C-4649-9F45-B4E95EFC4F88} = {B41FD7FE-5A7A-4B02-AC23-0DA21EC61248}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD612AAD-795A-4E21-B77A-8699E058DE02}

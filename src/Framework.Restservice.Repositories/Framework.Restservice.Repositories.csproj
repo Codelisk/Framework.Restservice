@@ -18,13 +18,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Submodules\CodeGen\src\Common\Codelisk.GeneratorAttributes\Codelisk.GeneratorAttributes.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
-    <ProjectReference Include="..\..\Submodules\CodeGen\src\GeneratorHelper\Foundation.Crawler\Foundation.Crawler.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
-    <ProjectReference Include="..\..\Submodules\CodeGen\src\GeneratorHelper\Generators.Base\Generators.Base.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
-    <ProjectReference Include="..\..\Submodules\CodeGen\src\Generators\Web\WebGenerator.Base\WebGenerator.Base.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
-    <ProjectReference Include="..\..\Submodules\CodeGen\src\Generators\Web\WebRepositories.Contract.Generator\WebRepositories.Contract.Generator.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
-    <ProjectReference Include="..\..\Submodules\CodeGen\src\Generators\Web\WebRepositories.Generator\WebRepositories.Generator.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
-    <ProjectReference Include="..\..\Submodules\CodeGen\src\Submodules\AutoRegisterInject\src\AutoRegisterInject\Codelisk.AutoRegisterInject.Generator.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
     <ProjectReference Include="..\Framework.Restservice.Database\Framework.Restservice.Database.csproj" />
+    <ProjectReference Include="..\Framework.Restservice.Foundation\Framework.Restservice.Foundation.csproj" />
       
   </ItemGroup>
 </Project>

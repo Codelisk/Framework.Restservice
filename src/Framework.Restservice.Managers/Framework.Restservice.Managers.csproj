@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\Backend.props" Condition="exists('..\Backend.props')" />
+  <Import Project="..\..\Backend.props" Condition="exists('..\..\Backend.props')" />
+  <Import Project="..\..\..\Backend.props" Condition="exists('..\..\..\Backend.props')" />
+  <Import Project="..\..\..\..\Backend.props" Condition="exists('..\..\..\..\Backend.props')" />
+  <Import Project="..\..\..\..\..\Backend.props" Condition="exists('..\..\..\..\..\Backend.props')" />
+  <Import Project="..\..\..\..\..\..\Backend.props" Condition="exists('..\..\..\..\..\..\Backend.props')" />
+  <Import Project="..\..\..\..\..\..\..\Backend.props" Condition="exists('..\..\..\..\..\..\..\Backend.props')" />
+  <Import Project="..\..\..\..\..\..\..\..\Backend.props" Condition="exists('..\..\..\..\..\..\..\..\Backend.props')" />
+
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" />
+    <PackageReference Include="AutoMapper" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Submodules\CodeGen\src\Common\Codelisk.GeneratorAttributes\Codelisk.GeneratorAttributes.csproj" />
+    <ProjectReference Include="..\..\Submodules\CodeGen\src\Generators\Web\WebManager.Contract.Generator\WebManager.Contract.Generator.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
+    <ProjectReference Include="..\..\Submodules\CodeGen\src\Generators\Web\WebManager.Generator\WebManager.Generator.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
+    <ProjectReference Include="..\Framework.Restservice.Foundation\Framework.Restservice.Foundation.csproj" />
+    <ProjectReference Include="..\Framework.Restservice.Repositories\Framework.Restservice.Repositories.csproj" />
+  </ItemGroup>
+</Project>

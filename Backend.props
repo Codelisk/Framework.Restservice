@@ -1,0 +1,4 @@
+<Project>
+  <Import Project="Library.props" Condition="exists('Library.props')" />
+  <Import Project="Backend.targets" Condition="exists('Backend.targets')" />
+</Project>

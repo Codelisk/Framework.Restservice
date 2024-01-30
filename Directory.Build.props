@@ -1,0 +1,31 @@
+<Project>
+    <Import Project="Directory.Packages.props" Condition="exists('Directory.Packages.props')" />
+
+    <PropertyGroup>
+    <EnableSourceControlManagerQueries>true</EnableSourceControlManagerQueries>
+	<EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+      <LangVersion>preview</LangVersion>
+      <ImplicitUsings>enable</ImplicitUsings>
+      <Nullable>enable</Nullable>
+      <OverrideTargetFrameworks>net8.0</OverrideTargetFrameworks>
+
+      <DebugType>portable</DebugType>
+      <DebugSymbols>True</DebugSymbols>
+
+      <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+      <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+      <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)obj/generated</CompilerGeneratedFilesOutputPath>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Include="SharedFiles\GlobalUsings.cs" Condition="exists('SharedFiles\GlobalUsings.cs')"  Link="GlobalUsings.cs" />
+    <Compile Include="..\SharedFiles\GlobalUsings.cs" Condition="exists('..\SharedFiles\GlobalUsings.cs')"  Link="GlobalUsings.cs" />
+    <Compile Include="..\..\SharedFiles\GlobalUsings.cs" Condition="exists('..\..\SharedFiles\GlobalUsings.cs')"  Link="GlobalUsings.cs" />
+    <Compile Include="..\..\..\SharedFiles\GlobalUsings.cs" Condition="exists('..\..\..\SharedFiles\GlobalUsings.cs')"  Link="GlobalUsings.cs" />
+    <Compile Include="..\..\..\..\SharedFiles\GlobalUsings.cs" Condition="exists('..\..\..\..\SharedFiles\GlobalUsings.cs')"  Link="GlobalUsings.cs" />
+    <Compile Include="..\..\..\..\..\SharedFiles\GlobalUsings.cs" Condition="exists('..\..\..\..\..\SharedFiles\GlobalUsings.cs')"  Link="GlobalUsings.cs" />
+    <Compile Include="..\..\..\..\..\..\SharedFiles\GlobalUsings.cs" Condition="exists('..\..\..\..\..\..\SharedFiles\GlobalUsings.cs')"  Link="GlobalUsings.cs" />
+    <Compile Include="..\..\..\..\..\..\..\SharedFiles\GlobalUsings.cs" Condition="exists('..\..\..\..\..\..\..\SharedFiles\GlobalUsings.cs')"  Link="GlobalUsings.cs" />
+  </ItemGroup>
+  
+</Project>

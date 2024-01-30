@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\Backend.props" Condition="exists('..\Backend.props')" />
+  <Import Project="..\..\Backend.props" Condition="exists('..\..\Backend.props')" />
+  <Import Project="..\..\..\Backend.props" Condition="exists('..\..\..\Backend.props')" />
+  <Import Project="..\..\..\..\Backend.props" Condition="exists('..\..\..\..\Backend.props')" />
+  <Import Project="..\..\..\..\..\Backend.props" Condition="exists('..\..\..\..\..\Backend.props')" />
+  <Import Project="..\..\..\..\..\..\Backend.props" Condition="exists('..\..\..\..\..\..\Backend.props')" />
+  <Import Project="..\..\..\..\..\..\..\Backend.props" Condition="exists('..\..\..\..\..\..\..\Backend.props')" />
+  <Import Project="..\..\..\..\..\..\..\..\Backend.props" Condition="exists('..\..\..\..\..\..\..\..\Backend.props')" />
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Submodules\CodeGen\src\Common\Codelisk.GeneratorAttributes\Codelisk.GeneratorAttributes.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
+    <ProjectReference Include="..\..\submodules\CodeGen\src\Generators\Web\WebDbContext.Generator\WebDbContext.Generator.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
+    <ProjectReference Include="..\Framework.Restservice.Foundation\Framework.Restservice.Foundation.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,132 @@
+<Project>
+  <PropertyGroup>
+    <OrderlyzeFoundationVersion>3.0.10</OrderlyzeFoundationVersion>
+    <CodeliskVersion>2.13.99</CodeliskVersion>
+    <MicrosoftAspNetCore>8.0.0</MicrosoftAspNetCore>
+    <MicrosoftEntityFrameworkCore>8.0.0</MicrosoftEntityFrameworkCore>
+    <MicrosoftExtensionsVersion>8.0.0</MicrosoftExtensionsVersion>
+    <UnoWinUI>5.1.0-dev.568</UnoWinUI>
+    <UnoToolkitWinUI>5.1.0-dev.26</UnoToolkitWinUI>
+    <UnoExtensions>3.1.0-dev.76</UnoExtensions>
+  </PropertyGroup>
+  <ItemGroup Label="Global Package versions">
+    <PackageVersion Include="AutoMapper" Version="12.0.1" />
+    <PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="$(MicrosoftAspNetCore)" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageVersion Include="Moq" Version="4.20.69" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageVersion Include="Azure.AI.OpenAI" Version="1.0.0-beta.11" />
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageVersion Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
+    <PackageVersion Include="Microsoft.OpenApi" Version="1.6.6" />
+    <PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="7.3.0" />
+    <PackageVersion Include="Microsoft.Extensions.Caching.Abstractions" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="$(MicrosoftAspNetCore)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Authorization" Version="$(MicrosoftAspNetCore)" />
+    <PackageVersion Include="Microsoft.AspNetCore.DataProtection" Version="$(MicrosoftAspNetCore)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Identity.UI" Version="$(MicrosoftAspNetCore)" />
+    <PackageVersion Include="Microsoft.AspNetCore.JsonPatch" Version="$(MicrosoftAspNetCore)" />
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="$(MicrosoftAspNetCore)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="$(MicrosoftAspNetCore)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="$(MicrosoftEntityFrameworkCore)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="$(MicrosoftEntityFrameworkCore)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Abstractions" Version="$(MicrosoftEntityFrameworkCore)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="$(MicrosoftEntityFrameworkCore)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.InMemory" Version="$(MicrosoftEntityFrameworkCore)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="$(MicrosoftEntityFrameworkCore)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="$(MicrosoftEntityFrameworkCore)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="$(MicrosoftEntityFrameworkCore)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="$(MicrosoftEntityFrameworkCore)" />
+    <PackageVersion Include="Microsoft.Extensions.Caching.Abstractions" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.Binder" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Logging" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Options" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.Json" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="$(MicrosoftExtensionsVersion)" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.Windows.Compatibility" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageVersion Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.25936-preview" />
+    <PackageVersion Include="Microsoft.WindowsAppSDK" Version="1.4.231115000" />
+    <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageVersion Include="Prism.Container.Abstractions" Version="9.0.70-pre" />
+    <PackageVersion Include="Prism.Container.DryIoc" Version="9.0.70-pre" />
+    <PackageVersion Include="Prism.Core" Version="9.0.286-pre" />
+    <PackageVersion Include="Prism.DryIoc.Uno" Version="8.1.97" />
+    <PackageVersion Include="Prism.DryIoc.Uno.WinUI" Version="9.0.271-pre" />
+    <PackageVersion Include="Prism.Uno.WinUI" Version="9.0.286-pre" />
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageVersion Include="Uno.Core.Extensions.Logging.Singleton" Version="4.0.1" />
+    <PackageVersion Include="Uno.Extensions.Core.WinUI" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Authentication" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Authentication.WinUI" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Configuration" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Hosting" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Hosting.WinUI" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Http" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Http.WinUI" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Http.Refit" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Localization" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Localization.WinUI" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Logging.OSLog" Version="1.7.0" />
+    <PackageVersion Include="Uno.Extensions.Logging.WebAssembly.Console" Version="1.7.0" />
+    <PackageVersion Include="Uno.Extensions.Logging.WinUI" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Navigation" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Navigation.WinUI" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Navigation.Toolkit.WinUI" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Serialization" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Serialization.Http" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Extensions.Serialization.Refit" Version="$(UnoExtensions)" />
+    <PackageVersion Include="Uno.Material.WinUI" Version="4.1.0-dev.28" />
+    <PackageVersion Include="Uno.Dsp.Tasks" Version="1.3.0-dev.2" />
+    <PackageVersion Include="Uno.Toolkit.WinUI" Version="$(UnoToolkitWinUI)" />
+    <PackageVersion Include="Uno.Toolkit.WinUI.Material" Version="$(UnoToolkitWinUI)" />
+    <PackageVersion Include="Uno.Resizetizer" Version="1.3.0-dev.12" />
+    <PackageVersion Include="Uno.UI" Version="5.0.48" />
+    <PackageVersion Include="Uno.UI.RemoteControl" Version="$(UnoWinUI)" />
+    <PackageVersion Include="Uno.UI.Adapter.Microsoft.Extensions.Logging" Version="$(UnoWinUI)" />
+    <PackageVersion Include="Uno.UniversalImageLoader" Version="1.9.36" />
+    <PackageVersion Include="Uno.Wasm.Bootstrap" Version="8.0.0" />
+    <PackageVersion Include="Uno.Wasm.Bootstrap.DevServer" Version="8.0.0" />
+    <PackageVersion Include="Uno.Wasm.Bootstrap.Server" Version="8.0.0" />
+    <PackageVersion Include="Uno.WinUI" Version="$(UnoWinUI)" />
+    <PackageVersion Include="Uno.WinUI.Lottie" Version="$(UnoWinUI)" />
+    <PackageVersion Include="Uno.WinUI.DevServer" Version="$(UnoWinUI)" />
+    <PackageVersion Include="Uno.WinUI.WebAssembly" Version="$(UnoWinUI)" />
+    <PackageVersion Include="Uno.WinUI.Svg" Version="$(UnoWinUI)" />
+    <PackageVersion Include="SkiaSharp.Skottie" Version="2.88.6" />
+    <PackageVersion Include="SkiaSharp.Views.Uno" Version="2.88.6" />
+    <PackageVersion Include="SkiaSharp.Views.Uno.WinUI" Version="2.88.6" />
+    <PackageVersion Include="Svg.Skia" Version="1.0.0.4" />
+    <PackageVersion Include="Uno.WinUI.Skia.Wpf" Version="$(UnoWinUI)" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageVersion Include="Refit" Version="7.0.0" />
+    <PackageVersion Include="Polly" Version="8.2.0" />
+    <PackageVersion Include="Refit.Newtonsoft.Json" Version="7.0.0" />
+    <PackageVersion Include="ReactiveUI" Version="19.5.1" />
+    <PackageVersion Include="AsyncAwaitBestPractices" Version="7.0.0" />
+    <PackageVersion Include="Xamarin.Google.Android.Material" Version="1.10.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageVersion Include="xunit" Version="2.6.2" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.5.4">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageVersion>
+    <PackageVersion Include="coverlet.collector" Version="6.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageVersion>
+  </ItemGroup>
+</Project>

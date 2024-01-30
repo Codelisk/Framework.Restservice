@@ -14,5 +14,12 @@ namespace Framework.Restservice.Controller.Controllers.Base
         {
             _manager = manager;
         }
+
+        [AllowAnonymous]
+        [Microsoft.AspNetCore.Mvc.HttpGet("GetCompletelyAll")]
+        public Task<List<T>> GetCompletelyAll()
+        {
+            return _manager.GetCompletelyAll();
+        }
     }
 }

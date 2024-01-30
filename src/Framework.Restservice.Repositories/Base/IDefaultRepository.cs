@@ -21,5 +21,7 @@ namespace Framework.Restservice.Repositories.Base
         Task<TEntity> Add(TEntity t);
         [AddRange]
         Task AddRange(List<TEntity> list);
+        [GetLast]
+        Task<TEntity> GetLast();
     }
 }

@@ -40,6 +40,23 @@ namespace Framework.Restservice.Repositories.Base
         {
             return await base.Get(id);
         }
+        [GetLast]
+        public override async Task<TEntity> GetLast()
+        {
+            try
+            {
+                return await _context.Set<TEntity>().AsNoTracking().Where(x => x.UserId == GetUserIdGuid()).OrderBy(x => (x as ICreatedAt).CreatedAt).LastOrDefaultAsync();
+            }
+            catch (System.InvalidOperationException ex)
+            {
+                throw new InvalidOperationException($"Most likely {typeof(TEntity).FullName} does not inherit {typeof(ICreatedAt).FullName}.", ex);
+            }
+        }
+        public Task<List<TEntity>> GetCompletelyAll()
+        {
+            return base.GetAll();
+        }
+
         [GetAll]
         public override async Task<List<TEntity>> GetAll()
         {

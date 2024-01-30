@@ -13,6 +13,8 @@ namespace Framework.Restservice.Managers.Base
         Task Delete(TKey id);
         [Get]
         Task<TDto> Get(TKey id);
+        [GetLast]
+        Task<TDto> GetLast();
         [GetFull]
         Task<object> GetFull(TKey id);
         [GetAll]
@@ -27,3 +29,4 @@ namespace Framework.Restservice.Managers.Base
         Task<List<object>> GetAllFull();
     }
 }
+

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Framework.Restservice.Controller\Framework.Restservice.Controller.csproj" />
+    <ProjectReference Include="..\..\submodules\CodeGen\src\Generators\Web\Codelisk.Controller.Generator\Codelisk.Controller.Generator.csproj" PrivateAssets="all" OutputItemType="Analyzer"  />
     <ProjectReference Include="..\Sample.Foundation\Sample.Foundation.csproj" />
   </ItemGroup>
 

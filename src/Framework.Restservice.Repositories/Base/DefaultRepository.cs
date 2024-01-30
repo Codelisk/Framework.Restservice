@@ -6,8 +6,8 @@ namespace Framework.Restservice.Repositories.Base
     [DefaultRepository]
     public class DefaultRepository<TEntity, TKey> : IDefaultRepository<TEntity, TKey> where TEntity : BaseBaseIdDto
     {
-        private readonly BaseDbContext _context;
-        public DefaultRepository(BaseDbContext context)
+        protected readonly BackendContext _context;
+        public DefaultRepository(BackendContext context)
         {
             _context = context;
         }
@@ -16,7 +16,7 @@ namespace Framework.Restservice.Repositories.Base
         public virtual async Task<TEntity> Add(TEntity t)
         {
             EntityEntry<TEntity> result;
-            result = await  _context.Set<TEntity>().AddAsync(t);
+            result = await _context.Set<TEntity>().AddAsync(t);
 
             await _context.SaveChangesAsync();
             return result.Entity;
@@ -36,7 +36,7 @@ namespace Framework.Restservice.Repositories.Base
             var foundEntity = await _context.Set<TEntity>().FindAsync(t.GetId());
             EntityEntry<TEntity> result = _context.Entry(foundEntity);
             result.CurrentValues.SetValues(t);
-            
+
             await _context.SaveChangesAsync();
             return result.Entity;
         }
@@ -44,6 +44,18 @@ namespace Framework.Restservice.Repositories.Base
         public virtual async Task<TEntity> Get(TKey id)
         {
             return await EntityByIdAsync(id);
+        }
+        [GetLast]
+        public virtual async Task<TEntity> GetLast()
+        {
+            try
+            {
+                return await _context.Set<TEntity>().AsNoTracking().OrderBy(x => (x as ICreatedAt).CreatedAt).LastOrDefaultAsync();
+            }
+            catch (System.InvalidOperationException ex)
+            {
+                throw new InvalidOperationException($"Most likely {typeof(TEntity).FullName} does not inherit {typeof(ICreatedAt).FullName}.", ex);
+            }
         }
         [GetAll]
         public virtual async Task<List<TEntity>> GetAll()
@@ -59,7 +71,7 @@ namespace Framework.Restservice.Repositories.Base
         }
         private async Task<TEntity> EntityByIdAsync(TKey id)
         {
-            if(id is Guid idGuid)
+            if (id is Guid idGuid)
             {
                 return await _context.Set<TEntity>().FindAsync(idGuid);
             }

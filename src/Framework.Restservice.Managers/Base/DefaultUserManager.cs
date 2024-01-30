@@ -15,5 +15,10 @@ namespace Framework.Restservice.Managers.Base
         public DefaultUserManager(IDefaultUserRepository<TEntity, TKey> Repo, IMapper mapper) : base(Repo, mapper)
         {
         }
+
+        public async Task<List<TDto>> GetCompletelyAll()
+        {
+            return _mapper.Map<List<TDto>>(await (_repo as IDefaultUserRepository<TEntity, TKey>).GetCompletelyAll());
+        }
     }
 }

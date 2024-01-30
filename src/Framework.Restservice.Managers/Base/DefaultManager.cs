@@ -14,7 +14,7 @@ namespace Framework.Restservice.Managers.Base
     public class DefaultManager<TDto, TKey, TEntity> : IDefaultManager<TDto, TKey, TEntity> where TDto : class where TEntity : BaseBaseIdDto
     {
         public readonly IDefaultRepository<TEntity, TKey> _repo;
-        private readonly IMapper _mapper;
+        protected readonly IMapper _mapper;
 
         public DefaultManager(IDefaultRepository<TEntity, TKey> Repo, IMapper mapper)
         {
@@ -50,6 +50,12 @@ namespace Framework.Restservice.Managers.Base
         public async Task<TDto> Get(TKey id)
         {
             return _mapper.Map<TDto>(await _repo.Get(id));
+        }
+
+        [GetLast]
+        public async Task<TDto> GetLast()
+        {
+            return _mapper.Map<TDto>(await _repo.GetLast());
         }
 
         [GetFull]

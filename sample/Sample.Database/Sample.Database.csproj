@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Framework.Restservice.Database\Framework.Restservice.Database.csproj" />
+    <ProjectReference Include="..\..\submodules\CodeGen\src\Generators\Web\WebDbContext.Generator\WebDbContext.Generator.csproj" PrivateAssets="all" OutputItemType="Analyzer"  />
     <ProjectReference Include="..\Sample.Foundation\Sample.Foundation.csproj" />
   </ItemGroup>
 

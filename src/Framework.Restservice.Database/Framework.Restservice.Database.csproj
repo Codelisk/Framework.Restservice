@@ -21,6 +21,7 @@
     <ProjectReference Include="..\..\Submodules\CodeGen\src\Common\Codelisk.GeneratorAttributes\Codelisk.GeneratorAttributes.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
     <ProjectReference Include="..\..\submodules\CodeGen\src\Generators\Web\WebDbContext.Generator\WebDbContext.Generator.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
     <ProjectReference Include="..\Framework.Restservice.Foundation\Framework.Restservice.Foundation.csproj" />
+    
   </ItemGroup>
 
 </Project>

@@ -9,6 +9,7 @@
   <Import Project="..\..\..\..\..\..\..\Backend.props" Condition="exists('..\..\..\..\..\..\..\Backend.props')" />
   <Import Project="..\..\..\..\..\..\..\..\Backend.props" Condition="exists('..\..\..\..\..\..\..\..\Backend.props')" />
   <ItemGroup>
+    <PackageReference Include="AutoMapper" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" />
     <ProjectReference Include="..\..\submodules\CodeGen\src\Common\Codelisk.GeneratorAttributes\Codelisk.GeneratorAttributes.csproj" />

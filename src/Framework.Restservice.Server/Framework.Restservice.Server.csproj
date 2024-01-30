@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\Backend.props" Condition="exists('..\Backend.props')" />
   <Import Project="..\..\Backend.props" Condition="exists('..\..\Backend.props')" />
@@ -8,11 +8,6 @@
   <Import Project="..\..\..\..\..\..\Backend.props" Condition="exists('..\..\..\..\..\..\Backend.props')" />
   <Import Project="..\..\..\..\..\..\..\Backend.props" Condition="exists('..\..\..\..\..\..\..\Backend.props')" />
   <Import Project="..\..\..\..\..\..\..\..\Backend.props" Condition="exists('..\..\..\..\..\..\..\..\Backend.props')" />
-
-
-  <PropertyGroup>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-  </PropertyGroup>
 
 
   <ItemGroup>
@@ -40,6 +35,10 @@
     <ProjectReference Include="..\Framework.Restservice.Database\Framework.Restservice.Database.csproj" />
     <ProjectReference Include="..\Framework.Restservice.Managers\Framework.Restservice.Managers.csproj" />
     <ProjectReference Include="..\Framework.Restservice.Repositories\Framework.Restservice.Repositories.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
 
 </Project>

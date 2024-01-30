@@ -16,12 +16,12 @@ namespace Framework.Restservice.Server
     public static class ProgramHelper
     {
 
-        public static void ConfigureAllServices<TProfile>(this IServiceCollection services) where TProfile : Profile, new()
+        public static void ConfigureAllServices<TProfile, TDbContext>(this IServiceCollection services) where TDbContext : DbContext where TProfile : Profile, new() 
         {
             services.AddAutoMapper<TProfile>();
             services.AddCors();
             services.AddControllers();
-            services.AddIdentity();
+            services.AddIdentity<TDbContext>();
             // ConfigureAndStartApp the RouteOptions to use lowercase URLs
             //services.ConfigureAndStartApp<RouteOptions>(options => options.LowercaseUrls = true);
             services.AddSwagger();

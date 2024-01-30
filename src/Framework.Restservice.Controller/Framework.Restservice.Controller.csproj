@@ -8,6 +8,7 @@
   <Import Project="..\..\..\..\..\..\Backend.props" Condition="exists('..\..\..\..\..\..\Backend.props')" />
   <Import Project="..\..\..\..\..\..\..\Backend.props" Condition="exists('..\..\..\..\..\..\..\Backend.props')" />
   <Import Project="..\..\..\..\..\..\..\..\Backend.props" Condition="exists('..\..\..\..\..\..\..\..\Backend.props')" />
+
   <ItemGroup>
     <Compile Remove="Services\**" />
     <EmbeddedResource Remove="Services\**" />

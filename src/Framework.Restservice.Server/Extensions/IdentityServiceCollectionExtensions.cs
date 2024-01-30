@@ -1,16 +1,17 @@
 using Framework.Restservice.Database;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Framework.Restservice.Server.Extensions
 {
     public static class IdentityServiceCollectionExtensions
     {
-        public static void AddIdentity(this IServiceCollection services)
+        public static void AddIdentity<TDbContext>(this IServiceCollection services) where TDbContext : DbContext
         {
             services.AddIdentityCore<UserDto>()
-                .AddEntityFrameworkStores<Framework.RestserviceContext>()
+                .AddEntityFrameworkStores<TDbContext>()
                 .AddApiEndpoints();
 
             services.AddAuthentication()

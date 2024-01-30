@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Framework.Restservice.Server\Framework.Restservice.Server.csproj" />
+    <ProjectReference Include="..\Sample.Controller\Sample.Controller.csproj" />
     <ProjectReference Include="..\Sample.Foundation\Sample.Foundation.csproj" />
   </ItemGroup>
 

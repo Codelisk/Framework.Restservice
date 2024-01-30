@@ -1,5 +1,5 @@
 ﻿[Dto]
-internal class ProductDto : BaseDtoWithName
+public class ProductDto : BaseDtoWithName
 {
 }
 

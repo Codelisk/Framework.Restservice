@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sample.Controller
+namespace Sample.Foundation
 {
-    internal class ProductController
+    internal class Update
     {
     }
 }

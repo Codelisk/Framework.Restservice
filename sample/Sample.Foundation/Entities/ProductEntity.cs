@@ -1,5 +1,5 @@
 ﻿[Entity(typeof(ProductDto))]
-internal class ProductEntity : ProductDto
+public class ProductEntity : ProductDto
 {
 }
 

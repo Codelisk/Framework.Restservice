@@ -6,8 +6,8 @@ namespace Framework.Restservice.Repositories.Base
     [DefaultRepository]
     public class DefaultRepository<TEntity, TKey> : IDefaultRepository<TEntity, TKey> where TEntity : BaseBaseIdDto
     {
-        protected readonly BackendContext _context;
-        public DefaultRepository(BackendContext context)
+        protected readonly DbContext _context;
+        public DefaultRepository(DbContext context)
         {
             _context = context;
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sample.Managers
 {
-    internal class ProductManager
+    internal class ProductManager43
     {
     }
 }

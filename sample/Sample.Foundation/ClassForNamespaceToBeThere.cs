@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sample.Foundation
 {
-    internal class Update
+    internal class ClassForNamespaceToBeThere
     {
     }
 }

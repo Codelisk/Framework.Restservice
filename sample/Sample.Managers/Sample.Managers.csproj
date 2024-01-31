@@ -8,9 +8,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Framework.Restservice.Managers\Framework.Restservice.Managers.csproj" />
-    <ProjectReference Include="..\..\submodules\CodeGen\src\Generators\Web\WebManager.Contract.Generator\WebManager.Contract.Generator.csproj" PrivateAssets="all" OutputItemType="Analyzer"  />
-    <ProjectReference Include="..\..\submodules\CodeGen\src\Generators\Web\WebManager.Generator\WebManager.Generator.csproj" PrivateAssets="all" OutputItemType="Analyzer"  />
+    <ProjectReference Include="..\..\submodules\CodeGen\src\Generators\Web\WebManager.Contract.Generator\WebManager.Contract.Generator.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
+    <ProjectReference Include="..\..\submodules\CodeGen\src\Generators\Web\WebManager.Generator\WebManager.Generator.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
     <ProjectReference Include="..\Sample.Foundation\Sample.Foundation.csproj" />
+    <ProjectReference Include="..\Sample.Repositories\Sample.Repositories.csproj" />
   </ItemGroup>
 
 </Project>

@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\Framework.Restservice.Foundation\Framework.Restservice.Foundation.csproj" />
     <ProjectReference Include="..\..\submodules\CodeGen\src\Common\Codelisk.GeneratorAttributes\Codelisk.GeneratorAttributes.csproj" />
+    <ProjectReference Include="..\..\submodules\CodeGen\src\Generators\Foundation\Codelisk.Foundation.Generator\Codelisk.Foundation.Generator.csproj" PrivateAssets="all" OutputItemType="Analyzer"/>
   </ItemGroup>
 
 </Project>

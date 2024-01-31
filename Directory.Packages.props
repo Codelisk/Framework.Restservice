@@ -2,7 +2,7 @@
   <PropertyGroup>
     <OrderlyzeFoundationVersion>3.0.10</OrderlyzeFoundationVersion>
     <CodeliskVersion>2.13.99</CodeliskVersion>
-    <MicrosoftAspNetCore>8.0.0</MicrosoftAspNetCore>
+    <MicrosoftAspNetCore>8.0.1</MicrosoftAspNetCore>
     <MicrosoftEntityFrameworkCore>8.0.0</MicrosoftEntityFrameworkCore>
     <MicrosoftExtensionsVersion>8.0.0</MicrosoftExtensionsVersion>
     <UnoWinUI>5.1.0-dev.568</UnoWinUI>

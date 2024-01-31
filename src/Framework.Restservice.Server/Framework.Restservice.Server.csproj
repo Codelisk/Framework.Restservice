@@ -12,12 +12,16 @@
 
   <ItemGroup>
     <Compile Remove="Apis\**" />
+    <Compile Remove="Properties\**" />
     <Content Remove="Apis\**" />
     <EmbeddedResource Remove="Apis\**" />
+    <EmbeddedResource Remove="Properties\**" />
     <None Remove="Apis\**" />
+    <None Remove="Properties\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" />
     <PackageReference Include="Swashbuckle.AspNetCore" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" />
 
@@ -35,10 +39,6 @@
     <ProjectReference Include="..\Framework.Restservice.Database\Framework.Restservice.Database.csproj" />
     <ProjectReference Include="..\Framework.Restservice.Managers\Framework.Restservice.Managers.csproj" />
     <ProjectReference Include="..\Framework.Restservice.Repositories\Framework.Restservice.Repositories.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Properties\" />
   </ItemGroup>
 
 </Project>

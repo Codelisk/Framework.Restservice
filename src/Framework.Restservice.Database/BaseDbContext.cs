@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Framework.Restservice.Database
 {
     [BaseContext]
-    public partial class BaseDbContext : IdentityDbContext<UserDto, IdentityRole<Guid>, Guid>
+    public partial class BaseDbContext : Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext<UserDto, Microsoft.AspNetCore.Identity.IdentityRole<System.Guid>, System.Guid>
     {
         public BaseDbContext(DbContextOptions options) : base(options)
         {

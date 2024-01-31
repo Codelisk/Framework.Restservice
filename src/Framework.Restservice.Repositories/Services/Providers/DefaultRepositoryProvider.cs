@@ -7,5 +7,5 @@ using Microsoft.AspNetCore.Http;
 
 namespace Framework.Restservice.Repositories.Services.Providers
 {
-    public record DefaultRepositoryProvider(BaseDbContext PrintingContext, UserManager<UserDto> UserManager, IHttpContextAccessor HttpContextAccessor);
+    public record DefaultRepositoryProvider(UserManager<UserDto> UserManager, IHttpContextAccessor HttpContextAccessor);
 }

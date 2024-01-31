@@ -8,7 +8,7 @@ namespace Framework.Restservice.Repositories.Base
     {
         private readonly IHttpContextAccessor HttpContextAccessor;
         private readonly UserManager<UserDto> UserManager;
-        public DefaultUserRepository(DefaultRepositoryProvider defaultRepositoryProvider) : base(defaultRepositoryProvider.PrintingContext)
+        public DefaultUserRepository(DefaultRepositoryProvider defaultRepositoryProvider, DbContext dbContext) : base(dbContext)
         {
             HttpContextAccessor = defaultRepositoryProvider.HttpContextAccessor;
             UserManager = defaultRepositoryProvider.UserManager;

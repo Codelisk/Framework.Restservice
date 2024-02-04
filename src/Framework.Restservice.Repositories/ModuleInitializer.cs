@@ -9,7 +9,7 @@ namespace Framework.Restservice.Repositories
 {
     public static partial class ModuleInitializer
     {
-        public static void AddRepositoryServices(this IServiceCollection services)
+        public static void AddBaseServices(this IServiceCollection services)
         {
             services.AddScoped<DefaultRepositoryProvider>();
         }

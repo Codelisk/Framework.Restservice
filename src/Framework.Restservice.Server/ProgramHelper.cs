@@ -7,7 +7,6 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.IO;
 using System.Linq;
-using Framework.Restservice.Database;
 using Microsoft.EntityFrameworkCore;
 using Framework.Restservice.Server.Extensions;
 

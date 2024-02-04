@@ -1,6 +1,5 @@
 global using Codelisk.GeneratorAttributes.WebAttributes.Repository;
 global using Codelisk.GeneratorAttributes.WebAttributes.HttpMethod;
-global using Framework.Restservice.Database;
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.EntityFrameworkCore.ChangeTracking;
 global using Microsoft.AspNetCore.Identity;

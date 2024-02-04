@@ -24,7 +24,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Submodules\CodeGen\src\Common\Codelisk.GeneratorAttributes\Codelisk.GeneratorAttributes.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
-    <ProjectReference Include="..\..\Submodules\CodeGen\src\Generators\Web\Codelisk.Controller.Generator\Codelisk.Controller.Generator.csproj" PrivateAssets="all" OutputItemType="Analyzer" />
     <ProjectReference Include="..\Framework.Restservice.Foundation\Framework.Restservice.Foundation.csproj" />
     <ProjectReference Include="..\Framework.Restservice.Managers\Framework.Restservice.Managers.csproj" />
     <ProjectReference Include="..\Framework.Restservice.Repositories\Framework.Restservice.Repositories.csproj" />

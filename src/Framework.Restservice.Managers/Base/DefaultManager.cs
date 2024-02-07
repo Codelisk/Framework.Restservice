@@ -39,7 +39,7 @@ namespace Framework.Restservice.Managers.Base
         [AddRange]
         public async Task AddRange(List<TDto> list)
         {
-            await _repo.Add(_mapper.Map<TEntity>(list));
+            await _repo.AddRange(_mapper.Map<List<TEntity>>(list));
         }
         [Save]
         public async Task<TDto> Save(TDto t)

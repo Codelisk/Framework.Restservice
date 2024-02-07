@@ -16,6 +16,7 @@ namespace Framework.Restservice.Repositories.Base
         public virtual async Task<TEntity> Add(TEntity t)
         {
             EntityEntry<TEntity> result;
+            t.CreatedAt = DateTime.Now;
             result = await _context.Set<TEntity>().AddAsync(t);
 
             await _context.SaveChangesAsync();
@@ -25,6 +26,10 @@ namespace Framework.Restservice.Repositories.Base
         [AddRange]
         public virtual async Task AddRange(List<TEntity> list)
         {
+            foreach (var item in list)
+            {
+                item.CreatedAt = DateTime.Now;
+            }
             await _context.Set<TEntity>().AddRangeAsync(list);
 
             await _context.SaveChangesAsync();

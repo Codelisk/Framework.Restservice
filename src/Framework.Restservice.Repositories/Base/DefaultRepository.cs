@@ -39,6 +39,11 @@ namespace Framework.Restservice.Repositories.Base
         public virtual async Task<TEntity> Save(TEntity t)
         {
             var foundEntity = await _context.Set<TEntity>().FindAsync(t.GetId());
+            if(foundEntity == null)
+            {
+                return await Add(t);
+            }
+
             EntityEntry<TEntity> result = _context.Entry(foundEntity);
             result.CurrentValues.SetValues(t);
 

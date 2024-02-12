@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using AutoMapper;
 using Codelisk.GeneratorAttributes.WebAttributes.HttpMethod;
 using Codelisk.GeneratorAttributes.WebAttributes.Manager;
 using Framework.Restservice.Repositories.Base;

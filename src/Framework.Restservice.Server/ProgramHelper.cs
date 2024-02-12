@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Framework.Restservice.Server.Extensions;
+using AutoMapper;
 
 namespace Framework.Restservice.Server
 {

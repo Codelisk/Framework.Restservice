@@ -30,7 +30,7 @@
     <PackageVersion Include="Azure.AI.OpenAI" Version="1.0.0-beta.11" />
     <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageVersion Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
-    <PackageVersion Include="Microsoft.OpenApi" Version="1.6.6" />
+    <PackageVersion Include="Microsoft.OpenApi" Version="1.6.13" />
     <PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
     <PackageVersion Include="Microsoft.Extensions.Caching.Abstractions" Version="$(MicrosoftExtensionsVersion)" />
     <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="$(MicrosoftExtensionsVersion)" />

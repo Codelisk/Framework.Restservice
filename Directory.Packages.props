@@ -2,7 +2,7 @@
   <PropertyGroup>
     <OrderlyzeFoundationVersion>3.0.10</OrderlyzeFoundationVersion>
     <CodeliskVersion>2.13.99</CodeliskVersion>
-    <MicrosoftAspNetCore>8.0.0</MicrosoftAspNetCore>
+    <MicrosoftAspNetCore>8.0.3</MicrosoftAspNetCore>
     <MicrosoftEntityFrameworkCore>8.0.0</MicrosoftEntityFrameworkCore>
     <MicrosoftExtensionsVersion>8.0.0</MicrosoftExtensionsVersion>
     <Uno>4.2.0-dev.17</Uno>
@@ -31,7 +31,7 @@
     <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageVersion Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
     <PackageVersion Include="Microsoft.OpenApi" Version="1.6.6" />
-    <PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
+    <PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="7.1.2" />
     <PackageVersion Include="Microsoft.Extensions.Caching.Abstractions" Version="$(MicrosoftExtensionsVersion)" />
     <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="$(MicrosoftExtensionsVersion)" />
     <PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="$(MicrosoftAspNetCore)" />

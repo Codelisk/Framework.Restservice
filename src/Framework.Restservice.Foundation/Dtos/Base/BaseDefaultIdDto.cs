@@ -2,7 +2,7 @@
 public class BaseDefaultIdDto : BaseBaseIdDto
 {
     [Id]
-    [Key]
+    [System.ComponentModel.DataAnnotations.Key]
     [JsonPropertyName("id")]
     public Guid id { get; set; }
 
